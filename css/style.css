@@ -234,15 +234,12 @@ text-transform: uppercase;
   .portfolio {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-  
-    
+    margin: 0 auto; 
   }
   .work-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-  
   }
   .work-card {
     width: 500px;
@@ -402,6 +399,6 @@ background-color: #e9b753;
   "b"
   "c";
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,auto);
+  grid-template-rows:repeat(3,auto);
 }
 }
