@@ -243,8 +243,7 @@ text-transform: uppercase;
 
   .work-card {
     flex:30%;
-    max-width: 30%
-    height:auto;
+    max-width: 30%;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -387,10 +386,6 @@ background-color: #e9b753;
 
 /* Styles for screens smaller than 600px */
 @media only screen and (max-width: 600px) {
-.heroImg {
-    flex-direction:column;
-    flex: 100%;
-}
 
 .work-card {
   flex-direction: row;
