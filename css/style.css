@@ -43,7 +43,6 @@ align-items: center;
 position: fixed;
 padding: 0px;
 background-color: #F8F5F2;
-position: fixed;
 top: 0;
 left: 0;
 right: 0;
@@ -231,18 +230,22 @@ text-transform: uppercase;
   }
   
   /* work section */
-  .portfolio {
-    width: 100%;
-    margin: 0 auto; 
-    
-  }
+ .Portfolio {
+  text-align: center;
+ }
+
   .work-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
+    text-align: center;
   }
+
   .work-card {
-    width: 30%;
+    flex:30%;
+    max-width: 30%
+    height:auto;
+    padding: 20px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -250,7 +253,7 @@ text-transform: uppercase;
   }
   
   .work-card img {
-    width: 100%;
+    width: 80%;
     height: 300px;
     object-fit: cover;
     border-radius: 4px 4px 0 0;
@@ -264,9 +267,8 @@ text-transform: uppercase;
   }
   
   .work-card p {
-    margin: 20px;
-    text-align:center;
-    
+    margin-bottom: 20px;
+    text-align: center;
   }
   
 
@@ -385,20 +387,14 @@ background-color: #e9b753;
 
 /* Styles for screens smaller than 600px */
 @media only screen and (max-width: 600px) {
-.flexContainer {
-  flex-direction: column;
+.heroImg {
+    flex-direction:column;
+    flex: 100%;
 }
 
-.flexChild {
-  width: 100%;
-}
-
-.portfolio {
-  grid-template-areas:
-  "a"
-  "b"
-  "c";
-  grid-template-columns: 1fr;
-  grid-template-rows:repeat(3,auto);
-}
-}
+.work-card {
+  flex-direction: row;
+  flex:100%;
+  max-width: 100%;
+    }
+  }
